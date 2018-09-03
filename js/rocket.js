@@ -11,6 +11,17 @@ var changeState = function (state) {
         timer = setInterval(function () {
           countDownNumber = countDownNumber -1;
           document.getElementById('countDown').innerHTML = countDownNumber;
+
+          if (countDownNumber == 5) {
+              // be nervous
+              
+          };
+
+          if (countDownNumber == 3) {
+              // cant wait
+
+          };
+
           if (countDownNumber <= 0) {
               changeState(3);
           }
@@ -20,7 +31,7 @@ var changeState = function (state) {
                 var randomNumber = Math.round(Math.random()*10);
                 console.log('randomNumber:',randomNumber)
                 // success
-                if (randomNumber > 5) {
+                if (randomNumber > 2) {
                       changeState(4);
 
                 } else {
