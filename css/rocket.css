@@ -1,3 +1,5 @@
+body{font-family: helvetica, arial, sans-serif;}
+
 .left{
   background-color: aquamarine;
   position: fixed;
@@ -5,6 +7,27 @@
   height: 100%;
   top: 0;
   left: 0;
+
+}
+
+.interface {
+  text-align: center;
+  padding: 20px;
+}
+
+a.button {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 20px 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: color 300ms;
+}
+
+a:hover {
+  color: red;
 
 }
 
@@ -28,11 +51,31 @@
 
 .nervous {
   position: absolute;
-  top: 100px;
-  left: 100px;
+  bottom: 200px;
+  left: 50%;
   background: url('../img/nervous.png') no-repeat 0 0;
-  width: 143px;
-  height: 70px;
+  width: 223px;
+  height: 100px;
+  margin-left: -250px;
+  display: none;
+}
+
+.nervous.show {
+  display: block;
+}
+
+.cant-wait {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  background: url('../img/cant-wait.jpeg') no-repeat 0 0;
+  width: 223px;
+  height: 147px;
+  display: none;
+}
+
+.cant-wait.show {
+  display: block;
 }
 
 .rocket{
