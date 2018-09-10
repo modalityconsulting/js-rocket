@@ -88,7 +88,10 @@ a:hover {
   background: url('../img/rocket-state1.png') no-repeat 0 0;
   transition: bottom 10000ms;
 }
-
+.created{
+  font-size: 10px;
+  color: blue;
+}
 /* rocket bg image */
 body.body-state2 .rocket{
         background-image: url('../img/rocket-state2.png');
